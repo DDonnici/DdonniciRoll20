@@ -1,0 +1,145 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "DonnicisMonsters",
+				"abbreviation": "DDA",
+				"full": "Donnici's Monsters",
+				"url": "",
+				"authors": [
+					"Daniel Donnici"
+				],
+				"convertedBy": []
+			}
+		],
+		"dateAdded": 1590921974,
+		"dateLastModified": 1590921974
+	},
+	"monster": [
+		{
+			"name": "Clockwork Brawler",
+			"group": "Construct",
+			"isNpc": true,
+			"source": "DonnicisMonsters",
+			"level": 2,
+			"size": "M",
+			"type": "construct",
+			"alignment": [
+				{
+					"special": "Automato"
+				}
+			],
+			"ac": [
+				16
+			],
+			"hp": {
+				"formula": "10d8 + 20",
+				"average": 65
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 15,
+			"dex": 19,
+			"con": 15,
+			"int": 6,
+			"wis": 13,
+			"cha": 3,
+			"save": {
+				"dex": "+7",
+				"wis": "+4"
+			},
+			"skill": {
+				"perception": "+4"
+			},
+			"senses": [
+				"darkvision 35 ft.",
+				"blindsight 25 ft."
+			],
+			"passive": 14,
+			"immune": [
+				"poison",
+				"psychic"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned"
+			],
+			"cr": "5",
+			"trait": [
+				{
+					"name": "Magic Resistence",
+					"entries": [
+						"The clockwork bawler has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Magic Weapons",
+					"entries": [
+						"The clockwork brawler's weapon attacks are magical."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The clockwork brawler makes two unarmed strikes."
+					]
+				},
+				{
+					"name": "Unarmed Strike",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}12 ({@damage 1d12 + 4}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Knockout{@recharge 4}",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}12 ({@damage 1d12 + 4}) bludgeoning damage.",
+						"Target Creature must succed on a DC15 Constitution saving Throw or fall unconcious for 1 minute. A target can repeat the saving throw at the end of each turns, ending the effect on itself on a success"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Sweep Kick",
+					"entries": [
+						"When a creature misses the clockwork brawler with a melee attack, the brawler can use its reaction to make a unarmed strike against the creature. If it hits, the attack deals normal damage and the creature falls {@condition prone}."
+					]
+				}
+			],
+			"environment": [
+				"mountain",
+				"urban"
+			],
+			"fluff": {
+				"entries": [
+					"Clockwork brawlers are a powerful foe constructed by dwarves as personal protectors. Clockwork brawlers have a humanoid but have large arms and big hands that they use to strike, was one of the first mechanical constructs made by dwarves, first to work on constructions, but then they were modificated and used for protection."
+				]
+			},
+			"tokenUrl": "https://i.ibb.co/6FjMhF5/brawlers.png",
+			"traitTags": [
+				"Magic Weapons"
+			],
+			"senseTags": [
+				"B",
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"uniqueId": "13f6f3e434175c8dfefdac0d4d939056"
+		}
+	]
+}
