@@ -12,8 +12,8 @@
 				"convertedBy": []
 			}
 		],
-		"dateAdded": 1591142347,
-		"dateLastModified": 1591142347
+		"dateAdded": 1591142490,
+		"dateLastModified": 1591142490
 	},
 	"monster": [
 		{
@@ -1106,6 +1106,7 @@
 					]
 				}
 			],
+			"tokenUrl": "https://i.imgur.com/eVY1Pid.png",
 			"senseTags": [
 				"SD"
 			],
