@@ -12,8 +12,8 @@
 				"convertedBy": []
 			}
 		],
-		"dateAdded": 1591134161,
-		"dateLastModified": 1591134161
+		"dateAdded": 1591142347,
+		"dateLastModified": 1591142347
 	},
 	"monster": [
 		{
@@ -970,6 +970,151 @@
 			],
 			"miscTags": [
 				"MW"
+			]
+		},
+		{
+			"name": "Duruk Virgo",
+			"source": "DonnicisMonsters",
+			"size": "M",
+			"type": "humanoid",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				15
+			],
+			"hp": {
+				"formula": "6d8 + 28",
+				"average": 55
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 9,
+			"dex": 14,
+			"con": 16,
+			"int": 20,
+			"wis": 12,
+			"cha": 9,
+			"save": {
+				"int": "+8",
+				"con": "+6"
+			},
+			"skill": {
+				"arcana": "+8",
+				"investigation": "+8",
+				"religion": "+8"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 11,
+			"resist": [
+				{
+					"resist": [
+						"lightning",
+						"necrotic",
+						"poison"
+					]
+				},
+				{
+					"resist": []
+				}
+			],
+			"conditionImmune": [
+				"charmed"
+			],
+			"cr": "5",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell shocking grasp}"
+							]
+						}
+					},
+					"type": "spellcasting"
+				},
+				{
+					"name": "Spellcasting",
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell chromatic orb}",
+								"{@spell shield}"
+							],
+							"slots": 6
+						},
+						"2": {
+							"spells": [
+								"{@spell misty step}"
+							],
+							"slots": 4
+						}
+					},
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Part Mechanic",
+					"entries": [
+						"Duruk has improved himself with some machanical parts, therefore he have resistance to lightning and necrotic damage, and have advantage on these types saving throws"
+					]
+				},
+				{
+					"name": "Shock Collar",
+					"entries": [
+						"Duruk uses a collar that gives a small shock if he is acting against his will, like being {@condition charmed}, mind controlled, or similar effects."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Boomstick ammunition 2",
+					"entries": [
+						"{@atk mw,rw} {@hit 2} to hit, reach 5 ft. or range 5/60 ft., one target. {@h}4 ({@damage 1d8}) piercing damage in melee, or 3 ({@damage 1d8 - 1}) piercing damage at range."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Shield",
+					"entries": [
+						"An {@condition invisible} barrier of magical force appears and protects you. Until the start of your next turn, you have a +5 bonus to AC, including against the triggering attack, and you take no damage from magic missile."
+					]
+				}
+			],
+			"legendaryHeader": [
+				"Duruk is not a fighter or warrior of any type, likewise he fights using gimmicks and can make two legendary actions per round that are:"
+			],
+			"legendaryActions": 4,
+			"legendary": [
+				{
+					"name": "Drop Colockwork Bomber",
+					"entries": [
+						"Duruk Virgo can summon two Clockwork Bombers in an unoccupied space you can see within 15ft range, that acts in his turn."
+					]
+				},
+				{
+					"name": "Throw Water Bottle + Shokcing Grasp",
+					"entries": [
+						"Duruk Virgo throw a water bottle making the target terrain and 5ft adjacent terrain wet, characters occupying that spaces must make a DC13 Dexterity Svaing Throw or become wet.",
+						"Wet terrain conduct lightning spells, and wet characters takes {@damage 1d8} damage when hit by lightning damage of any type and have  disadvantage to lightning abilities or spell saving throws."
+					]
+				}
+			],
+			"senseTags": [
+				"SD"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
 			]
 		}
 	]
