@@ -12,8 +12,8 @@
 				"convertedBy": []
 			}
 		],
-		"dateAdded": 1592184446,
-		"dateLastModified": 1592184446
+		"dateAdded": 1592728719,
+		"dateLastModified": 1592728719
 	},
 	"monster": [
 		{
@@ -2634,6 +2634,570 @@
 			],
 			"miscTags": [
 				"RW"
+			]
+		},
+		{
+			"name": "Blaaluuhool",
+			"source": "DonnicisMonsters",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"kuo-toa"
+				]
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "10d8 + 20",
+				"average": 35
+			},
+			"speed": {
+				"walk": 30,
+				"swim": 30
+			},
+			"str": 10,
+			"dex": 13,
+			"con": 14,
+			"int": 8,
+			"wis": 17,
+			"cha": 12,
+			"save": {
+				"int": "+1",
+				"cha": "+3"
+			},
+			"skill": {
+				"perception": "+7",
+				"religion": "+4",
+				"animal handling": "+5",
+				"athletics": "+2",
+				"nature": "+1"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 17,
+			"languages": [
+				"Undercommon"
+			],
+			"cr": "2",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The kuo-toa is a 2nd-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 12}, {@hit 4} to hit with spell attacks). The kuo-toa has the following cleric spells prepared:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell druidcraft}",
+								"{@spell guidance}",
+								"{@spell poison spray}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell animal friendship}",
+								"{@spell charm person}",
+								"{@spell cure wounds}",
+								"{@spell detect magic}",
+								"{@spell faerie fire}"
+							],
+							"slots": 3,
+							"lower": 1
+						}
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				},
+				{
+					"name": "Spellcasting",
+					"spells": {
+						"2": {
+							"spells": [
+								"{@spell barkskin}",
+								"{@spell beast sense}",
+								"{@spell mirror image}",
+								"{@spell misty step}"
+							],
+							"slots": 3
+						}
+					},
+					"type": "spellcasting"
+				},
+				{
+					"name": "Spellcasting",
+					"spells": {
+						"3": {
+							"spells": [
+								"{@spell call lightning}",
+								"{@spell water breathing}",
+								"{@spell water walk}"
+							],
+							"slots": 2
+						}
+					},
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Amphibious",
+					"entries": [
+						"The kuo-toa can breathe air and water."
+					]
+				},
+				{
+					"name": "Otherworldly Perception",
+					"entries": [
+						"The kuo-toa can sense the presence of any creature within 30 feet of it that is {@condition invisible} or on the Ethereal Plane. It can pinpoint such a creature that is moving."
+					]
+				},
+				{
+					"name": "Slippery",
+					"entries": [
+						"The kuo-toa has advantage on ability checks and saving throws made to escape a grapple."
+					]
+				},
+				{
+					"name": "Sunlight Sensitivity",
+					"entries": [
+						"While in sunlight, the kuo-toa has disadvantage on attack rolls, as well as on Wisdom ({@skill Perception}) checks that rely on sight."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Can make two attacks"
+					]
+				},
+				{
+					"name": "Scimitar",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d6 + 1}) damage."
+					]
+				},
+				{
+					"name": "Sling",
+					"entries": [
+						"{@atk rw} {@hit 4} to hit, unlimited range, one target. {@h}4 ({@damage 1d4 + 2}) damage."
+					]
+				},
+				{
+					"name": "Wild Shape - 1 - Criclo of Moon",
+					"entries": [
+						"you can use your action to magically assume the shape of a beast that you have seen before. You can use this feature twice."
+					]
+				}
+			],
+			"environment": [
+				"underdark"
+			],
+			"tokenUrl": "https://i.imgur.com/fEwgYQ4.png",
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/kuo-toa-whip.mp3?v=1.106.7"
+			},
+			"traitTags": [
+				"Amphibious",
+				"Sunlight Sensitivity"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"U"
+			],
+			"damageTags": [
+				"P"
+			],
+			"spellcastingTags": [
+				"CC"
+			],
+			"miscTags": [
+				"MW",
+				"RNG",
+				"RW"
+			]
+		},
+		{
+			"name": "Gwondelyn",
+			"source": "DonnicisMonsters",
+			"page": 232,
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"bullywug"
+				]
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item hide armor|phb}",
+						"{@item shield|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "6d8 + 6",
+				"average": 40
+			},
+			"speed": {
+				"walk": 20,
+				"swim": 40
+			},
+			"str": 14,
+			"dex": 12,
+			"con": 12,
+			"int": 7,
+			"wis": 15,
+			"cha": 10,
+			"save": {
+				"con": "+3"
+			},
+			"skill": {
+				"perception": "+4",
+				"stealth": "+3"
+			},
+			"passive": 14,
+			"languages": [
+				"Bullywug"
+			],
+			"cr": "2",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell friends}",
+								"{@spell ray of frost}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell mage armor}",
+								"{@spell magic missile}",
+								"{@spell witch bolt}"
+							],
+							"slots": 3
+						}
+					},
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Amphibious",
+					"entries": [
+						"The croaker can breathe air and water."
+					]
+				},
+				{
+					"name": "Speak with Frogs and Toads",
+					"entries": [
+						"The croaker can communicate simple concepts to frogs and toads when it speaks in Bullywug."
+					]
+				},
+				{
+					"name": "Standing Leap",
+					"entries": [
+						"The croaker's long jump is up to 20 feet and its high jump is up to 10 feet, with or without a running start."
+					]
+				},
+				{
+					"name": "Swamp Camouflage",
+					"entries": [
+						"The croaker has advantage on Dexterity (Stealth) checks made to hide in swampy terrain."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Spear",
+					"entries": [
+						"{@atk mw,rw} {@hit 4} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage, or 6 ({@damage 1d8 + 2}) piercing damage if used with two hands to make a melee attack."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage."
+					]
+				},
+				{
+					"name": "Glaaar-pat (3/Day)",
+					"entries": [
+						"The croaker sings a song of marshy doom. Each chosen creature within 30 feet of the croaker that can hear the song must make a {@dc 12} Wisdom saving throw, taking 9 ({@damage 2d8}) psychic damage on a failed save, or half as much damage on a successful one. A creature that fails this saving throw also has disadvantage on Constitution saving throws until the end of its next turn."
+					]
+				},
+				{
+					"name": "Rooooo-glog (1/Day)",
+					"entries": [
+						"The croaker sings an ode to an elder froghemoth. Each bullywug within 30 feet of the croaker that can hear the song gains 10 temporary hit points."
+					]
+				}
+			],
+			"tokenUrl": "https://i.imgur.com/guJ77gy.png",
+			"traitTags": [
+				"Amphibious"
+			],
+			"languageTags": [
+				"OTH"
+			],
+			"damageTags": [
+				"P",
+				"Y"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"THW"
+			]
+		},
+		{
+			"name": "Raslor",
+			"source": "DonnicisMonsters",
+			"page": 33,
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"goblinoid"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item chain mail|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "5d8 + 5",
+				"average": 50
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 15,
+			"dex": 14,
+			"con": 13,
+			"int": 8,
+			"wis": 11,
+			"cha": 9,
+			"skill": {
+				"stealth": "+6",
+				"survival": "+2"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 10,
+			"languages": [
+				"Common",
+				"Goblin"
+			],
+			"cr": "1",
+			"trait": [
+				{
+					"name": "Brute",
+					"entries": [
+						"A melee weapon deals one extra die of its damage when the bugbear hits with it (included in the attack)."
+					]
+				},
+				{
+					"name": "Surprise Attack",
+					"entries": [
+						"If the bugbear surprises a creature and hits it with an attack during the first round of combat, the target takes an extra 7 ({@dice 2d6}) damage from the attack."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Two-Handed Morningstar",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d10 + 2}) piercing damage."
+					]
+				},
+				{
+					"name": "Action Surge",
+					"entries": [
+						"extra action in turn once betw. short rests"
+					]
+				}
+			],
+			"environment": [
+				"forest",
+				"grassland",
+				"underdark"
+			],
+			"tokenUrl": "https://i.imgur.com/ECQOUVJ.png",
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/bugbear.mp3?v=1.106.7"
+			},
+			"traitTags": [
+				"Brute"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"C",
+				"GO"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Jum Guttergut",
+			"source": "DonnicisMonsters",
+			"size": "S",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"goblin"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"{@item hide armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 14,
+				"formula": "4d6"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 8,
+			"dex": 14,
+			"con": 10,
+			"int": 13,
+			"wis": 10,
+			"cha": 8,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 10,
+			"languages": [
+				"Common",
+				"Goblin"
+			],
+			"cr": "1",
+			"trait": [
+				{
+					"name": "Nimble Escape",
+					"entries": [
+						"The goblin can take the Disengage or Hide action as a bonus action on each of its turns."
+					]
+				},
+				{
+					"name": "Volatile",
+					"entries": [
+						"When the goblin takes damage that is not poison or psychic damage, roll {@dice 1d20}. On a roll of 1 to 5, the goblin's alchemical pack explodes. The goblin and each creature within 10 feet of it must succeed on a {@dc 11} Dexterity saving throw, taking 17 ({@damage 5d6}) fire damage on a failed save, or half as much damage on a successful one. The goblin has disadvantage on its saving throw."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Scimitar",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) slashing damage."
+					]
+				},
+				{
+					"name": "Acid Flask",
+					"entries": [
+						"{@atk rw} {@hit 4} to hit, range 5/20 ft., one target. {@h}7 ({@damage 2d6}) acid damage."
+					]
+				},
+				{
+					"name": "Goblin Molotov",
+					"entries": [
+						"{@atk rw} {@hit 4} to hit, range 20 ft., one target. {@h}2 ({@damage 1d4}) fire damage and the target catches fire, taking 2 ({@damage 1d4}) fire damage at the end of each of its turns. An affected creature or another creature within 5 feet of it can take an action to extinguish the fire. On a successful save, the creature takes half as much damage and doesn't catch fire."
+					]
+				},
+				{
+					"name": "Tangleweb",
+					"entries": [
+						"{@atk rw} {@hit 4} to hit, range 20 ft., one creature. {@h}The creature must succeed on a {@dc 11} Strength saving throw or be {@condition restrained} by sticky web-like adhesive. As an"
+					]
+				},
+				{
+					"name": "escaping from the tangleweb on a success",
+					"entries": [
+						"The effect ends if the tangleweb is destroyed. The tangleweb has AC 10, 5 hit points, resistance to bludgeoning damage, and immunity to poison and psychic damage."
+					]
+				},
+				{
+					"name": "Double Lob {@recharge 5}",
+					"entries": [
+						"The goblin can make two ranged weapon attacks."
+					]
+				}
+			],
+			"tokenUrl": "https://i.imgur.com/psE7grd.png",
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"C",
+				"GO"
+			],
+			"damageTags": [
+				"A",
+				"F",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			],
+			"conditionInflict": [
+				"restrained"
+			],
+			"conditionInflicted": [
+				"restrained"
 			]
 		}
 	]
