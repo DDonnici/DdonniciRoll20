@@ -12,8 +12,8 @@
 				"convertedBy": []
 			}
 		],
-		"dateAdded": 1592858872,
-		"dateLastModified": 1592858872
+		"dateAdded": 1592859090,
+		"dateLastModified": 1592859090
 	},
 	"monster": [
 		{
@@ -3379,7 +3379,10 @@
 					]
 				}
 			],
-			"tokenUrl": "blob:https://imgur.com/438629bb-de63-4a44-917d-663651e1ad05",
+			"environment": [
+				"desert"
+			],
+			"tokenUrl": "https://i.imgur.com/BkIlGJQ.png",
 			"traitTags": [
 				"Undead Fortitude"
 			],
