@@ -12,8 +12,8 @@
 				"convertedBy": []
 			}
 		],
-		"dateAdded": 1592820113,
-		"dateLastModified": 1592820113
+		"dateAdded": 1592858872,
+		"dateLastModified": 1592858872
 	},
 	"monster": [
 		{
@@ -3298,6 +3298,104 @@
 			],
 			"miscTags": [
 				"RW"
+			]
+		},
+		{
+			"name": "Lizardfolk Zombie",
+			"source": "DonnicisMonsters",
+			"page": 0,
+			"size": "M",
+			"type": "undead",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 11,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 26,
+				"formula": "4d8 + 8"
+			},
+			"speed": {
+				"walk": 20
+			},
+			"str": 17,
+			"dex": 6,
+			"con": 15,
+			"int": 3,
+			"wis": 8,
+			"cha": 3,
+			"save": {
+				"wis": "+1",
+				"con": "+4"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 9,
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
+			"languages": [
+				"understands Draconic but can't speak"
+			],
+			"cr": "1/4",
+			"trait": [
+				{
+					"name": "Undead Fortitude",
+					"entries": [
+						"If damage reduces the zombie to 0 hit points, it must make a Constitution saving throw with a DC of 5 + the damage taken, unless the damage is radiant or from a critical hit. On a success, the zombie drops to 1 hit point instead."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage."
+					]
+				},
+				{
+					"name": "BattleAxe",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d10 + 3}) bludgeoning damage."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Sudden Lunge",
+					"entries": [
+						"If an enemy moves within 10 feet of the zombie, roll a {@dice d20}. If the roll is 11 or higher, the zombie moves up to 5 feet toward the enemy. If the zombie ends within 5 feet of the target, the zombie can make one melee weapon attack against it."
+					]
+				}
+			],
+			"tokenUrl": "blob:https://imgur.com/438629bb-de63-4a44-917d-663651e1ad05",
+			"traitTags": [
+				"Undead Fortitude"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"CS",
+				"DR"
+			],
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"miscTags": [
+				"MW"
 			]
 		}
 	]
