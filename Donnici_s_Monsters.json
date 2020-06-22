@@ -12,8 +12,8 @@
 				"convertedBy": []
 			}
 		],
-		"dateAdded": 1592728719,
-		"dateLastModified": 1592728719
+		"dateAdded": 1592820113,
+		"dateLastModified": 1592820113
 	},
 	"monster": [
 		{
@@ -2545,7 +2545,7 @@
 		{
 			"name": "Raguk Meliok",
 			"source": "DonnicisMonsters",
-			"level": 3,
+			"level": 4,
 			"size": "M",
 			"type": "humanoid",
 			"alignment": [
@@ -2561,7 +2561,7 @@
 			],
 			"hp": {
 				"formula": "3d10 + 2",
-				"average": 30
+				"average": 75
 			},
 			"speed": {
 				"walk": 30
@@ -2569,25 +2569,26 @@
 			"str": 17,
 			"dex": 13,
 			"con": 15,
-			"int": 8,
+			"int": 12,
 			"wis": 12,
 			"cha": 10,
 			"skill": {
-				"athletics": "+5",
-				"intimidation": "+2",
-				"perception": "+3",
-				"survival": "+3"
+				"athletics": "+6",
+				"intimidation": "+3",
+				"perception": "+4",
+				"survival": "+4"
 			},
 			"senses": [
 				"darkvision 60 ft."
 			],
-			"passive": 13,
-			"cr": "1",
+			"passive": 14,
+			"cr": "4",
 			"trait": [
 				{
 					"name": "Multiattack",
 					"entries": [
-						"Can do Three LongSword Attacks"
+						"Can do Three LongSword Attacks after he do this once, he can only do again after a short rest. (Action Surge)",
+						"Until the short rest, he can do two attacks normaly with his Main and off Hand."
 					]
 				}
 			],
@@ -2624,7 +2625,9 @@
 				{
 					"name": "Second Wind (regain 1d10+3 h.p.",
 					"entries": [
-						"(regain {@dice 1d10 + 3} h.p.)"
+						"(regain {@dice 1d10 + 3} h.p.)",
+						"On your turn, you can use a bonus action to regain hit points equal to {@dice 1d10} + your fighter level.",
+						"Once you use this feature, you must finish a short or long rest before you can use it again."
 					]
 				}
 			],
@@ -3103,8 +3106,8 @@
 				}
 			],
 			"hp": {
-				"average": 14,
-				"formula": "4d6"
+				"formula": "4d6",
+				"average": 30
 			},
 			"speed": {
 				"walk": 30
@@ -3198,6 +3201,103 @@
 			],
 			"conditionInflicted": [
 				"restrained"
+			]
+		},
+		{
+			"name": "Lizzord Mun",
+			"source": "DonnicisMonsters",
+			"level": 4,
+			"size": "M",
+			"type": "humanoid",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"Chain mail"
+					]
+				}
+			],
+			"hp": {
+				"formula": "3d10 + 2",
+				"average": 75
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 17,
+			"dex": 13,
+			"con": 15,
+			"int": 12,
+			"wis": 12,
+			"cha": 10,
+			"skill": {
+				"athletics": "+6",
+				"intimidation": "+3",
+				"perception": "+4",
+				"survival": "+4"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 14,
+			"cr": "4",
+			"trait": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Can do Three Battleaxe Attacks after he do this once, he can only do again after a short rest. (Action Surge)",
+						"Until the short rest, he can do two attacks normaly with his Main and off Hand."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Battleaxe",
+					"entries": [
+						"{@atk rw} {@hit 5} to hit, range 80/320 ft., one target. {@h}5 ({@damage 1d8 + 3}) damage."
+					]
+				},
+				{
+					"name": "Action Surge",
+					"entries": [
+						"(extra action in turn once betw. short rests)"
+					]
+				},
+				{
+					"name": "Combat Superiority",
+					"entries": [
+						"four {@dice 1d8} Superiority dice"
+					]
+				},
+				{
+					"name": "Maneuvers Known",
+					"entries": [
+						"• Feinting Attack (bonus action to gain adv. on attack):",
+						"superiority dice ;",
+						"• Precision Attack (add die to attack):",
+						"When you make a weapon attack roll against a creature, you can expend one superiority die to add it to the roll. You can use this maneuver before or after making the attack roll, but before any effects of the attack are applied.;",
+						"• Riposte (reaction attack when foe misses):",
+						"When a creature misses you with a melee attack, you can use your reaction and expend one superiority die to make a melee weapon attack against the creature. If you hit, you add the superiority die to the attack's damage roll."
+					]
+				},
+				{
+					"name": "Second Wind (regain 1d10+3 h.p.",
+					"entries": [
+						"(regain {@dice 1d10 + 3} h.p.)",
+						"On your turn, you can use a bonus action to regain hit points equal to {@dice 1d10} + your fighter level.",
+						"Once you use this feature, you must finish a short or long rest before you can use it again."
+					]
+				}
+			],
+			"tokenUrl": "https://i.imgur.com/WfPIA70.png",
+			"senseTags": [
+				"D"
+			],
+			"miscTags": [
+				"RW"
 			]
 		}
 	]
