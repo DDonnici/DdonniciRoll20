@@ -12,8 +12,8 @@
 				"convertedBy": []
 			}
 		],
-		"dateAdded": 1603491766,
-		"dateLastModified": 1603491766
+		"dateAdded": 1603492670,
+		"dateLastModified": 1603492670
 	},
 	"monster": [
 		{
@@ -5243,6 +5243,18 @@
 					]
 				}
 			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/DDonnici/donnici5etools/master/Tokens/white.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://raw.githubusercontent.com/DDonnici/donnici5etools/master/Tokens/white.png",
 			"traitTags": [
 				"Amorphous",
 				"Regeneration",
@@ -5375,12 +5387,12 @@
 						"type": "image",
 						"href": {
 							"type": "external",
-							"url": "https://github.com/DDonnici/donnici5etools/blob/master/Tokens/gunpowder.png?raw=true"
+							"url": "https://raw.githubusercontent.com/DDonnici/donnici5etools/master/Tokens/gunpowder.png"
 						}
 					}
 				]
 			},
-			"tokenUrl": "https://github.com/DDonnici/donnici5etools/blob/master/Tokens/gunpowder.png?raw=true",
+			"tokenUrl": "https://raw.githubusercontent.com/DDonnici/donnici5etools/master/Tokens/gunpowder.png",
 			"traitTags": [
 				"Amorphous",
 				"False Appearance"
@@ -5510,18 +5522,21 @@
 					]
 				}
 			],
+			"environment": [
+				"forest"
+			],
 			"fluff": {
 				"images": [
 					{
 						"type": "image",
 						"href": {
 							"type": "external",
-							"url": "https://github.com/DDonnici/donnici5etools/blob/master/Tokens/dwarvensoldier.png?raw=true"
+							"url": "https://raw.githubusercontent.com/DDonnici/donnici5etools/master/Tokens/dwarvensoldier.png"
 						}
 					}
 				]
 			},
-			"tokenUrl": "https://github.com/DDonnici/donnici5etools/blob/master/Tokens/dwarvensoldier.png?raw=true",
+			"tokenUrl": "https://raw.githubusercontent.com/DDonnici/donnici5etools/master/Tokens/dwarvensoldier.png",
 			"senseTags": [
 				"D"
 			],
@@ -5662,12 +5677,12 @@
 						"type": "image",
 						"href": {
 							"type": "external",
-							"url": "https://github.com/DDonnici/donnici5etools/blob/master/Tokens/dwmage.png?raw=true"
+							"url": "https://raw.githubusercontent.com/DDonnici/donnici5etools/master/Tokens/dwmage.png"
 						}
 					}
 				]
 			},
-			"tokenUrl": "https://github.com/DDonnici/donnici5etools/blob/master/Tokens/dwmage.png?raw=true",
+			"tokenUrl": "https://raw.githubusercontent.com/DDonnici/donnici5etools/master/Tokens/dwmage.png",
 			"soundClip": {
 				"type": "external",
 				"url": "https://5e.tools/audio/bestiary/duergar-xarrorn.mp3?v=1.106.1"
