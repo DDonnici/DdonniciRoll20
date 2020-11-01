@@ -12,8 +12,8 @@
 				"convertedBy": []
 			}
 		],
-		"dateAdded": 1603492670,
-		"dateLastModified": 1603492670
+		"dateAdded": 1604270991,
+		"dateLastModified": 1604270991
 	},
 	"monster": [
 		{
@@ -5697,6 +5697,859 @@
 			"damageTags": [
 				"L",
 				"P"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Pack of Gnolls",
+			"source": "DonnicisMonsters",
+			"page": 0,
+			"size": "G",
+			"type": "horde of medium humanoids",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@item hide armor|PHB}",
+						"{@item shield|PHB}"
+					]
+				}
+			],
+			"hp": {
+				"average": 262,
+				"formula": "25d20 + 0"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 20,
+			"dex": 12,
+			"con": 11,
+			"int": 6,
+			"wis": 10,
+			"cha": 7,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 10,
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"prone",
+				"restrained",
+				"stunned"
+			],
+			"languages": [
+				"Common",
+				"Gnoll"
+			],
+			"cr": "8",
+			"trait": [
+				{
+					"name": "Rampage",
+					"entries": [
+						"When the horde reduces a creature to 0 hit points with a melee attack on its turn, the horde can take a bonus action to move up to half its speed and use its Frenzy."
+					]
+				},
+				{
+					"name": "Horde",
+					"entries": [
+						"The horde can occupy another creature's space and vice versa, and the horde can move through any opening large enough for a Medium gnoll. Additionally, the horde is immune to any spell or effect that would alter its form."
+					]
+				},
+				{
+					"name": "Reactive",
+					"entries": [
+						"The horde can take one reaction on every turn in combat."
+					]
+				},
+				{
+					"name": "Stampede",
+					"entries": [
+						"When the horde moves through the space of a Large or smaller creature, the horde can force the creature to make a {@dc 16} Strength saving throw. On a failed save, the creature is knocked {@condition prone}."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The horde makes four spear attacks, or two spear attacks if the horde has half its hit points or fewer."
+					]
+				},
+				{
+					"name": "Spear",
+					"entries": [
+						"{@atk mw,rw} {@hit 8} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}8 ({@damage 1d6 + 5}) piercing damage."
+					]
+				},
+				{
+					"name": "Frenzy",
+					"entries": [
+						"Each creature of the horde's choice in the horde's space must make a {@dc 16} Dexterity saving throw. On a failed save, a creature takes 28 ({@damage 8d6}) piercing damage, or 14 ({@damage 4d6}) piercing damage if the horde has half its hit points or fewer. On a successful save, it takes half as much damage."
+					]
+				},
+				{
+					"name": "Volley",
+					"entries": [
+						"The horde launches a volley of spears at a point within 60 feet of it. Each creature of the horde's choice in a 10-foot-radius sphere centered on that point must make a {@dc 16} Dexterity saving throw. On a failed save, a creature takes 28 ({@damage 8d6}) piercing damage, or 14 ({@damage 4d6}) piercing damage if the horde has half its hit points or fewer. On a successful save, it takes half as much damage."
+					]
+				}
+			],
+			"traitTags": [
+				"Rampage"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"OTH"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RW",
+				"THW"
+			],
+			"conditionInflict": [
+				"prone"
+			]
+		},
+		{
+			"name": "Mob",
+			"source": "DonnicisMonsters",
+			"page": 0,
+			"size": "G",
+			"type": "horde of medium humanoids",
+			"alignment": "",
+			"ac": [
+				10
+			],
+			"hp": {
+				"average": 52,
+				"formula": "5d20 + 0"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 10,
+			"con": 10,
+			"int": 10,
+			"wis": 10,
+			"cha": 10,
+			"passive": 10,
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"prone",
+				"restrained",
+				"stunned"
+			],
+			"languages": [
+				"Common"
+			],
+			"cr": "1",
+			"trait": [
+				{
+					"name": "Horde",
+					"entries": [
+						"The horde can occupy another creature's space and vice versa, and the horde can move through any opening large enough for a Medium commoner.",
+						"Additionally, the horde is immune to any spell or effect that would alter its form."
+					]
+				},
+				{
+					"name": "Reactive",
+					"entries": [
+						"The horde can take one reaction on every turn in combat."
+					]
+				},
+				{
+					"name": "Stampede",
+					"entries": [
+						"When the horde moves through the space of a Large or smaller creature, the horde can force the creature to make a {@dc 13} Strength saving throw. On a failed save, the creature is knocked {@condition prone}."
+					]
+				},
+				{
+					"name": "Torches",
+					"entries": [
+						"The mob sheds bright light in a 20-foot radius and dim light for an additional 20 feet."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The horde makes four attacks, or two attacks if the horde has half its hit points or fewer."
+					]
+				},
+				{
+					"name": "Pitchfork",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) piercing damage."
+					]
+				},
+				{
+					"name": "Torch",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) fire damage."
+					]
+				},
+				{
+					"name": "Rock",
+					"entries": [
+						"{@atk rw} {@hit 5} to hit, range 20/60 ft., one target. {@h}5 ({@damage 1d4 + 3}) bludgeoning damage."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/DAMBFFn.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/DAMBFFn.png",
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"B",
+				"F",
+				"P"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RW"
+			],
+			"conditionInflict": [
+				"prone"
+			]
+		},
+		{
+			"name": "Squad of Infantrymen",
+			"source": "DonnicisMonsters",
+			"page": 0,
+			"size": "G",
+			"type": "horde of medium humanoids",
+			"alignment": "",
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item chain shirt|phb}",
+						"{@item shield|PHB}"
+					]
+				}
+			],
+			"hp": {
+				"average": 138,
+				"formula": "12d20 + 12"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 19,
+			"dex": 12,
+			"con": 12,
+			"int": 10,
+			"wis": 11,
+			"cha": 10,
+			"skill": {
+				"athletics": "+7"
+			},
+			"passive": 10,
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"prone",
+				"restrained",
+				"stunned"
+			],
+			"languages": [
+				"Any one language (usually common)"
+			],
+			"cr": "5",
+			"trait": [
+				{
+					"name": "Horde",
+					"entries": [
+						"The horde can occupy another creature's space and vice versa, and the horde can move through any opening large enough for a Medium infantryman.",
+						"Additionally, the horde is immune to any spell or effect that would alter its form."
+					]
+				},
+				{
+					"name": "Reactive",
+					"entries": [
+						"The horde can take one reaction on every turn in combat."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The horde makes four pike attacks, or two pike attacks if the horde has half its hit points or fewer."
+					]
+				},
+				{
+					"name": "Pike",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 10 ft., one target. {@h}9 ({@damage 1d10 + 4}) piercing damage."
+					]
+				},
+				{
+					"name": "Pike Wall",
+					"entries": [
+						"Each creature of the horde's choice within 10 feet of the horde must make a {@dc 15} Dexterity saving throw. On a failed save, a creature takes 44 ({@damage 8d10}) piercing damage, or 22 ({@damage 4d10}) piercing damage if the horde has half its hit points or fewer. On a successful save, it takes half as much damage."
+					]
+				},
+				{
+					"name": "Stampede",
+					"entries": [
+						"Stampede. When the horde moves through the space of a",
+						"creature that is no more than one size larger than an",
+						"individual member of the horde, it must succeed on a",
+						"Strength saving throw or be knocked {@condition prone} if the creature is already {@condition prone}d it have disadvantage on test and takes [[{@dice 3d8}]] or hald as much on a failed save. The DC of this is 14"
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/5YHlrpW.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/5YHlrpW.png",
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"prone"
+			]
+		},
+		{
+			"name": "Squad of Bowmen",
+			"source": "DonnicisMonsters",
+			"page": 0,
+			"size": "G",
+			"type": "horde of medium humanoids",
+			"alignment": "",
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"{@item leather armor|PHB}"
+					]
+				}
+			],
+			"hp": {
+				"average": 115,
+				"formula": "10d20 + 10"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 11,
+			"dex": 14,
+			"con": 12,
+			"int": 11,
+			"wis": 13,
+			"cha": 11,
+			"skill": {
+				"perception": "+3"
+			},
+			"passive": 13,
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"prone",
+				"restrained",
+				"stunned"
+			],
+			"languages": [
+				"Any one language (usually common)"
+			],
+			"cr": "3",
+			"trait": [
+				{
+					"name": "Horde",
+					"entries": [
+						"The horde can occupy another creature's space and vice versa, and the horde can move through any opening large enough for a Medium infantryman.",
+						"Additionally, the horde is immune to any spell or effect that would alter its form."
+					]
+				},
+				{
+					"name": "Reactive",
+					"entries": [
+						"The horde can take one reaction on every turn in combat."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The horde makes four longbow attacks, or two longbow attacks if the horde has half its hit points or fewer."
+					]
+				},
+				{
+					"name": "Longbow",
+					"entries": [
+						"{@atk rw} {@hit 4} to hit, range",
+						"150/600 ft., one target. {@h}6 ({@damage 1d8 + 2}) piercing damage."
+					]
+				},
+				{
+					"name": "Volley",
+					"entries": [
+						"The horde launches a volley of arrows at a point within 150 feet of it. Each creature of the horde's choice in a 10-foot-radius sphere centered on that point must make a {@dc 12} Dexterity saving throw. On a failed save, a creature takes 36 ({@damage 8d8}) piercing damage, or 18 ({@damage 4d8}) piercing damage if the horde has half its hit points or fewer. On a successful save, it takes half as much damage."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/e35kL02.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/e35kL02.png",
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"AOE",
+				"RNG",
+				"RW"
+			]
+		},
+		{
+			"name": "Squad of Dwarf Warriors",
+			"source": "DonnicisMonsters",
+			"page": 0,
+			"size": "G",
+			"type": "horde of medium humanoids",
+			"alignment": "",
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"{@item chain shirt|phb}",
+						"{@item shield|PHB}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "14d20 + 28",
+				"average": 175
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 11,
+			"con": 14,
+			"int": 10,
+			"wis": 11,
+			"cha": 10,
+			"skill": {
+				"athletics": "+7"
+			},
+			"passive": 10,
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"prone",
+				"restrained",
+				"stunned"
+			],
+			"languages": [
+				"Any one language (usually common)"
+			],
+			"cr": "5",
+			"trait": [
+				{
+					"name": "Horde",
+					"entries": [
+						"The horde can occupy another creature's space and vice versa, and the horde can move through any opening large enough for a Medium infantryman.",
+						"Additionally, the horde is immune to any spell or effect that would alter its form."
+					]
+				},
+				{
+					"name": "Reactive",
+					"entries": [
+						"The horde can take one reaction on every turn in combat."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The horde makes four Battleaxe attacks or three attacks and a shield wall action, or two Battleaxe attacks or one shield wall and one attck if the horde has half its hit points or fewer."
+					]
+				},
+				{
+					"name": "Shield Wall",
+					"entries": [
+						"Physical attacks against this creatures have disadvantge."
+					]
+				},
+				{
+					"name": "Stampede",
+					"entries": [
+						"Stampede. When the horde moves through the space of a",
+						"creature that is no more than one size larger than an",
+						"individual member of the horde, it must succeed on a",
+						"Strength saving throw or be knocked {@condition prone} if the creature is already {@condition prone}d it have disadvantage on test and takes [[{@dice 3d8}]] or hald as much on a failed save. The DC of this is 14"
+					]
+				},
+				{
+					"name": "Battleaxe",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}11 ({@damage 1d8 + 5}) damage."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/AnmE4iB.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/AnmE4iB.png",
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"prone"
+			]
+		},
+		{
+			"name": "Squad of Clockwork Halberd",
+			"source": "DonnicisMonsters",
+			"page": 0,
+			"size": "G",
+			"type": "horde of medium humanoids",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"{@item chain mail|PHB}",
+						"{@item shield|PHB}"
+					]
+				}
+			],
+			"hp": {
+				"average": 149,
+				"formula": "13d20 + 15"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 12,
+			"con": 12,
+			"int": 10,
+			"wis": 10,
+			"cha": 9,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 10,
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"prone",
+				"restrained",
+				"stunned"
+			],
+			"languages": [
+				"Common",
+				"Goblin"
+			],
+			"cr": "6",
+			"trait": [
+				{
+					"name": "Martial Advantage",
+					"entries": [
+						"A melee weapon deals one extra die of its damage when the horde attacks with it (included in the attack)."
+					]
+				},
+				{
+					"name": "Horde",
+					"entries": [
+						"The horde can occupy another creature's space and vice versa, and the horde can move through any opening large enough for medium.",
+						"Additionally, the horde is immune to any spell or effect that would alter its form."
+					]
+				},
+				{
+					"name": "Reactive",
+					"entries": [
+						"The horde can take one reaction on every turn in combat."
+					]
+				},
+				{
+					"name": "Stampede",
+					"entries": [
+						"Stampede. When the horde moves through the space of",
+						"a Large or smaller creature, the horde can force the",
+						"creature to make a {@dc 15} Strength saving throw. On a",
+						"failed save, the creature is knocked {@condition prone}. if the creature is already {@condition prone}d it have disadvantage on test and takes [[{@dice 3d8 + 6}]] or hald as much on a failed save. "
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The horde makes four spear attacks, or two spear attacks if the horde has half its hit points or fewer."
+					]
+				},
+				{
+					"name": "Halberd",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) piercing damage."
+					]
+				},
+				{
+					"name": "Horde Overdrive Flurry {@recharge}",
+					"entries": [
+						"The squad can make 6 halberd attacks instead of 4. Until the next turn, creatures have advantage to attack the squad."
+					]
+				},
+				{
+					"name": "Bombardment",
+					"entries": [
+						"The horde launches a volley of bullets at a point within 150 feet of it. Each creature of the horde's choice in a 10-foot-radius sphere centered on that point must make a {@dc 15} Dexterity saving throw. On a failed save, a creature takes 36 ({@damage 8d8}) piercing damage, or 18 ({@damage 4d8}) piercing damage if the horde has half its hit points or fewer. On a successful save, it takes half as much damage."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/2txWLEt.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/2txWLEt.png",
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"GO"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"AOE",
+				"MW"
+			],
+			"conditionInflict": [
+				"prone"
+			]
+		},
+		{
+			"name": "Clockwork Kraken",
+			"source": "DonnicisMonsters",
+			"page": 38,
+			"size": "L",
+			"type": "construct",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 142,
+				"formula": "15d10 + 60"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 20,
+			"dex": 12,
+			"con": 18,
+			"int": 3,
+			"wis": 11,
+			"cha": 1,
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 10,
+			"resist": [
+				"fire",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"immune": [
+				"poison",
+				"psychic"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned"
+			],
+			"languages": [
+				"understands the languages of its creator but can't speak"
+			],
+			"cr": "10",
+			"trait": [
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The clockwork kraken has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Independent Tentacles",
+					"entries": [
+						"The clockwork kraken has eight tentacles, each of which is treated as a Medium creature, moves independently on the construct's turn, and has a flying speed of 40 feet. The clockwork kraken's senses operate through its tentacles as well as its main body. Each tentacle can be attacked independently, with damage dealt to tentacles applied to the clockwork kraken's hit point total. A tentacle is destroyed if it takes more than 20 damage.",
+						"Reducing the construct to three or fewer tentacles reduces its attacks accordingly. A clockwork kraken can regrow any destroyed tentacles at the end of a long rest."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The clockwork kraken makes four tentacle slam attacks."
+					]
+				},
+				{
+					"name": "Tentacle Slam",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d6 + 5}) bludgeoning damage."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/027tjEP.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/027tjEP.png",
+			"traitTags": [
+				"Magic Resistance"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"CS"
+			],
+			"damageTags": [
+				"B"
 			],
 			"miscTags": [
 				"MW"
