@@ -12,8 +12,8 @@
 				"convertedBy": []
 			}
 		],
-		"dateAdded": 1604522440,
-		"dateLastModified": 1604522440
+		"dateAdded": 1610598539,
+		"dateLastModified": 1610598539
 	},
 	"monster": [
 		{
@@ -6812,6 +6812,126 @@
 				"MW",
 				"RNG",
 				"RW"
+			]
+		},
+		{
+			"name": "Executioner",
+			"source": "DonnicisMonsters",
+			"page": 0,
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any race"
+				]
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item studded leather armor|PHB|studded leather}"
+					]
+				}
+			],
+			"hp": {
+				"average": 112,
+				"formula": "15d8 + 45"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 12,
+			"con": 16,
+			"int": 7,
+			"wis": 9,
+			"cha": 10,
+			"save": {
+				"str": "+7",
+				"con": "+6"
+			},
+			"skill": {
+				"athletics": "+7",
+				"intimidation": "+3"
+			},
+			"passive": 9,
+			"languages": [
+				"any one language (usually Common)"
+			],
+			"cr": "5",
+			"trait": [
+				{
+					"name": "Brave",
+					"entries": [
+						"The executioner has advantage on saving throws against being {@condition frightened}."
+					]
+				},
+				{
+					"name": "Brute",
+					"entries": [
+						"A melee weapon does one extra die of its damage when the executioner hits with it (included in the attack)."
+					]
+				},
+				{
+					"name": "Executioner",
+					"entries": [
+						"When the executioner hits with an opportunity attack, the target must succeed on a {@dc 15} Strength saving throw or be knocked {@condition prone}."
+					]
+				},
+				{
+					"name": "Swift Dispatch",
+					"entries": [
+						"When the executioner hits a creature that is {@condition prone}, it can reroll 1's and 2's on the damage dice"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The executioner makes two melee attacks."
+					]
+				},
+				{
+					"name": "Greataxe",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., {@h}17 ({@damage 2d12 + 4}) slashing damage."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/LeNDcAU.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/LeNDcAU.png",
+			"traitTags": [
+				"Brute"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"X"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"prone"
 			]
 		}
 	]
