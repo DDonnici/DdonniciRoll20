@@ -1295,7 +1295,161 @@
 			"miscTags": [
 				"MW"
 			]
+		}, {
+	"source": "DonnicisMonsters",
+	"name": "Skull Lord",
+	"size": "M",
+	"type": "undead",
+	"alignment": [
+		"L",
+		"E"
+	],
+	"ac": [
+		{
+			"ac": 17,
+			"from": [
+				"{@item half plate armor|phb}"
+			]
+		}
+	],
+	"hp": {
+		"average": 156,
+		"formula": "24d8 + 48"
+	},
+	"speed": {
+		"walk": 30
+	},
+	"str": 14,
+	"dex": 19,
+	"con": 15,
+	"int": 14,
+	"wis": 15,
+	"cha": 17,
+	"save": {
+		"con": "+5",
+		"int": "+5",
+		"wis": "+5"
+	},
+	"skill": {
+		"arcana": "+5",
+		"perception": "+5",
+		"religion": "+5"
+	},
+	"immune": [
+		"cold",
+		"poison"
+	],
+	"vulnerable": [
+		"bludgeoning"
+	],
+	"conditionImmune": [
+		"exhaustion",
+		"paralyzed",
+		"poisoned"
+	],
+	"senses": [
+		"darkvision 60 ft."
+	],
+	"passive": 15,
+	"languages": [
+		"all languages it knew in life"
+	],
+	"cr": "9",
+	"trait": [
+		{
+			"name": "Create Bone Staff",
+			"entries": [
+				"As a bonus action, the skull can create a bonus staff. It can have only one bone staff in its possession at a time. If it loses possession of its bone staff, the staff breaks and the skull lord is free to create a new one."
+			]
 		},
+		{
+			"name": "Magic Resistance",
+			"entries": [
+				"The skull lord has advantage on saving throws against spells and other magical effects."
+			]
+		},
+		{
+			"name": "Skull Loss",
+			"entries": [
+				"When the skull lord is reduced to two thirds of its maximum hit points, one of its heads shatters. It can no longer use one randomly determined legendary action. If it is reduced to one third of its hit point maximum, it loses the use of another legendary action. If the skull lord regains enough hit points for its hit points to go back above one or two thirds of its maximum hit points, it regains the use of one of its lost legendary actions, determined randomly. Three-Headed. The skull lord has advantage on saving throws against being {@condition blinded}, {@condition charmed}, {@condition deafened}, {@condition frightened}, {@condition stunned}, and knocked {@condition unconscious}."
+			]
+		}
+	],
+	"action": [
+		{
+			"name": "Bone Staff",
+			"entries": [
+				"{@atk mw} {@hit +8} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d8 + 4}) bludgeoning damage plus 12 ({@damage 3d8}) cold damage."
+			]
+		}
+	],
+	"legendary": [
+		{
+			"name": "Bone Beckon",
+			"entries": [
+				"The skull lord's beckoning skull commands the bones of one creature it can see within 30 feet to come forth. If the target has a skeletal system, must succeed on a {@dc 15} Charisma saving throw or take 10 ({@damage 3d6}) piercing damage. The skull lord may chose itself, or a skeleton or undead creature created by it within 30 feet. The chosen creature immediately regains 7 ({@dice 2d6}) hit points. Alternatively the skull lords can hold the bone shards in its spitting skull."
+			]
+		},
+		{
+			"name": "Bone Shard",
+			"entries": [
+				"{@atk rw} {@hit +7} to hit, range 30/120 ft., one target. {@h}6 ({@damage 1d8 + 4}) piercing damage plus 12 ({@damage 3d8}) cold damage. If the skull lord is holding the bone shards of the target in its spitting skull (see Bone Beckon ability), the attack has advantage to hit and the target's bones are no longer held in the skull."
+			]
+		},
+		{
+			"name": "Create Servitor (Costs 2 Actions)",
+			"entries": [
+				"The skull lord's creator skull creates any type of skeleton (see Appendix B: Zombies and Skeletons, and Monster Manual pages 272, 273) from nearby bones. The created creature obeys the skull lord's telepathic orders (no action required) or defends the skull lord to the best of its ability, if it has no orders.",
+				"The skull lord can control up to three creatures with a combined XP value of 2,300 or less at a time. It cannot create any additional creatures above these limitations."
+			]
+		}
+	],
+	"page": 185,
+	"spellcasting": [
+		{
+			"name": "Innate Spellcasting",
+			"headerEntries": [
+				"A skull lord's innate spellcasting ability is Charisma (Spell save {@dc 15}). It can innately cast the following spells, requiring no material components:"
+			],
+			"daily": {
+				"1e": [
+					"{@spell cure wounds} (level 5, undead only)",
+					"{@spell invisibility}",
+					"{@spell meld into stone}",
+					"{@spell wall of fire}"
+				]
+			},
+			"ability": "cha",
+			"type": "spellcasting"
+		}
+	],
+	"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/CComp/Skull%20Lord.png",
+	"traitTags": [
+		"Magic Resistance"
+	],
+	"senseTags": [
+		"D"
+	],
+	"damageTags": [
+		"B",
+		"C",
+		"P"
+	],
+	"miscTags": [
+		"MW",
+		"RW"
+	],
+	"spellcastingTags": [
+		"I"
+	],
+	"languageTags": [
+		"LF"
+	],
+	"conditionInflictSpell": [
+		"invisible",
+		"prone"
+	]
+},
 		{
 			"name": "Clockwork Bomber",
 			"group": "Construct",
