@@ -12,8 +12,8 @@
 				"convertedBy": []
 			}
 		],
-		"dateAdded": 1611786176,
-		"dateLastModified": 1611786176
+		"dateAdded": 1611789656,
+		"dateLastModified": 1611789656
 	},
 	"monster": [
 		{
@@ -7282,6 +7282,336 @@
 			],
 			"damageTags": [
 				"S"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Explictica Defilus",
+			"source": "DonnicisMonsters",
+			"page": 234,
+			"size": "L",
+			"type": "monstrosity",
+			"alignment": [
+				"L",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 19,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 127,
+				"formula": "15d10 + 45"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 19,
+			"dex": 18,
+			"con": 16,
+			"int": 16,
+			"wis": 19,
+			"cha": 18,
+			"save": {
+				"dex": "+8",
+				"con": "+7",
+				"int": "+7",
+				"wis": "+8",
+				"cha": "+8"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 14,
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"poisoned"
+			],
+			"languages": [
+				"Celestial",
+				"Common"
+			],
+			"cr": "10",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The naga is an 11th-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 16}, {@hit 8} to hit with spell attacks), and it needs only verbal components to cast its spells. It has the following cleric spells prepared:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell mending}",
+								"{@spell sacred flame}",
+								"{@spell thaumaturgy}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell command}",
+								"{@spell cure wounds}",
+								"{@spell shield of faith}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell calm emotions}",
+								"{@spell hold person}",
+								"{@spell Melf's acid arrow}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell bestow curse}",
+								"{@spell clairvoyance}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell banishment}",
+								"{@spell freedom of movement}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell flame strike}",
+								"{@spell geas}"
+							],
+							"slots": 2
+						},
+						"6": {
+							"spells": [
+								"{@spell true seeing}"
+							],
+							"slots": 1
+						}
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Rejuvenation",
+					"entries": [
+						"If it dies, he returns to life in {@dice 1d6} days and regains all its hit points. Only a {@spell wish} spell can prevent this trait from functioning."
+					]
+				},
+				{
+					"name": "Multattack",
+					"entries": [
+						"Explictica can make two Bite attacks or One Bite and one Acid Spit"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 10 ft., one creature. {@h}8 ({@damage 1d8 + 4}) piercing damage, and the target must make a {@dc 15} Constitution saving throw, taking  [[{@dice 10d8}]] acid damage on a failed save, or half as much damage on a successful one."
+					]
+				},
+				{
+					"name": "Spit Acid",
+					"entries": [
+						"{@atk rw} {@hit 8} to hit, range 15/30 ft., one creature. {@h}The target must make a {@dc 15} Constitution saving throw, taking  [[{@dice 10d8}]] acid damage on a failed save, or half as much damage on a successful one."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If he a saving throw, it can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Acid Stream",
+					"entries": [
+						"A stream of acid emanates from you in a line 30 feet long and 5 feet wide in a direction you choose. Each creature in the line must succeed on a Dexterity saving throw or be covered in acid for the spell's duration or until a creature uses its action to scrape or wash the acid off itself or another creature. A creature covered in the acid takes {@damage 5d4} acid damage at start of each of its turns."
+					]
+				}
+			],
+			"environment": [
+				"desert",
+				"forest"
+			],
+			"fluff": {
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Wise and good, the beautiful guardian nagas protect sacred places and items of magical power from falling into evil hands. In their hidden redoubts, they research spells and hatch convoluted plots to thwart the evil designs of their enemies.",
+									"A guardian naga doesn't seek out violence, warning off intruders rather than attacking. Only if its foes persist does the naga attack, accosting enemies with its spells and poisonous spittle.",
+									{
+										"type": "entries",
+										"name": "Nagas",
+										"entries": [
+											"Nagas are intelligent serpents that inhabit the ruins of the past, amassing arcane treasures and knowledge.",
+											"The first nagas were created as immortal guardians by a humanoid race long lost to history. When this race died out, the nagas deemed themselves the rightful inheritors of their masters' treasures and magical lore. Industrious and driven, nagas occasionally venture out from their lairs to track down magic items or rare spellbooks.",
+											"Nagas never feel the ravages of time or succumb to sickness. Even if it is struck down, a naga's immortal spirit reforms in a new body in a matter of days, ready to continue its eternal work.",
+											{
+												"name": "Benevolent Dictators and Brutal Tyrants",
+												"entries": [
+													" A naga rules its domain with absolute authority. Whether it rules with compassion or by terrorizing its subjects, the naga believes itself the master of all other creatures that inhabit its domain."
+												],
+												"type": "entries"
+											},
+											{
+												"name": "Rivalry",
+												"entries": [
+													" Nagas have a long-standing enmity with the yuan-ti, with each race seeing itself as the epitome of serpentine evolution. Though cooperation between them is rare, nagas and yuan-ti sometimes set aside their differences to work toward common objectives. However, yuan-ti always chafe under a naga's authority."
+												],
+												"type": "entries"
+											},
+											{
+												"name": "Immortal Nature",
+												"entries": [
+													" A naga doesn't require air, food, drink, or sleep."
+												],
+												"type": "entries"
+											}
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/L6VkiRY.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/L6VkiRY.png",
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/guardian-naga.mp3?v=1.121.0"
+			},
+			"traitTags": [
+				"Rejuvenation"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"C",
+				"CE"
+			],
+			"damageTags": [
+				"P"
+			],
+			"spellcastingTags": [
+				"CC"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"RW"
+			]
+		},
+		{
+			"name": "Bright Naga",
+			"source": "DonnicisMonsters",
+			"page": 144,
+			"size": "L",
+			"type": "monstrosity",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 39,
+				"formula": "6d8 + 12"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 15,
+			"dex": 16,
+			"con": 15,
+			"int": 10,
+			"wis": 15,
+			"cha": 16,
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 12,
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"poisoned"
+			],
+			"languages": [
+				"Common",
+				"Draconic"
+			],
+			"cr": "2",
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"The bright naga's innate spellcasting ability is Charisma (spell save {@dc 13}). It can innately cast the following spells, requiring no material components:"
+					],
+					"will": [
+						"{@spell magic missile} (2nd level)"
+					],
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit +5} to hit, reach 5 ft., one target. {@h}10 ({@damage 2d6 + 3}) piercing damage."
+					]
+				}
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/CComp/Bright%20Naga.png",
+			"senseTags": [
+				"SD"
+			],
+			"languageTags": [
+				"C",
+				"DR"
+			],
+			"damageTags": [
+				"P"
 			],
 			"spellcastingTags": [
 				"I"
